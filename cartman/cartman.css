@@ -1,0 +1,46 @@
+body, html {
+  background: #333;
+  height: 100%; }
+
+.table-w {
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center; }
+  .table-w .table-c {
+    display: table-cell;
+    vertical-align: middle; }
+
+.cartman {
+  position: relative;
+  display: inline-block; }
+  .cartman .head {
+    background-color: #feedc5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 300px;
+    height: 260px;
+    position: relative; }
+    .cartman .head:after {
+      content: " ";
+      background: #feedc5;
+      width: 300px;
+      height: 150px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      border-radius: 50%;
+      border-top: solid 15px #ffe11d; }
+    .cartman .head .hat {
+      background: #00bac6;
+      width: 320px;
+      height: 100px;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      border-top-right-radius: 60%;
+      border-top-left-radius: 60%;
+      border-radius: 50%; }
+
+/*# sourceMappingURL=cartman.css.map */
