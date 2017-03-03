@@ -15,32 +15,56 @@ body, html {
   position: relative;
   display: inline-block; }
   .cartman .head {
+    overflow: hidden;
     background-color: #feedc5;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    width: 300px;
+    width: 400px;
     height: 260px;
-    position: relative; }
+    position: relative;
+    border-top: solid 100px #00bac6; }
     .cartman .head:after {
       content: " ";
-      background: #feedc5;
-      width: 300px;
-      height: 150px;
-      position: absolute;
-      top: 40px;
-      left: 0;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
       border-radius: 50%;
-      border-top: solid 15px #ffe11d; }
-    .cartman .head .hat {
-      background: #00bac6;
-      width: 320px;
-      height: 100px;
+      background: #feedc5;
+      border-top: solid 30px #ffe11d;
       position: absolute;
       top: -10px;
       left: -10px;
-      border-top-right-radius: 60%;
-      border-top-left-radius: 60%;
-      border-radius: 50%; }
+      width: calc(100% + 20px);
+      height: 200px;
+      z-index: 3; }
+    .cartman .head .eye {
+      width: 100px;
+      height: 120px;
+      background: #FFF;
+      position: absolute;
+      top: 28px;
+      z-index: 4;
+      left: calc(50% - 102px);
+      border-radius: 50%;
+      transform: rotate(20deg);
+      border-top: solid 3px #999; }
+      .cartman .head .eye:after {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #000;
+        top: 40%;
+        right: 30px;
+        content: " ";
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%; }
+      .cartman .head .eye.right {
+        left: auto;
+        right: calc(50% - 102px);
+        transform: rotate(-20deg); }
+        .cartman .head .eye.right:after {
+          right: auto;
+          left: 30px; }
 
 /*# sourceMappingURL=cartman.css.map */
