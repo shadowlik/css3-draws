@@ -13,18 +13,7 @@ $shoes: #2c2c34;
 $red: #EC3458;
 
 //Sizes */
-//TODO improve the sizes variables - make all sizes proportional
-//Supply only one size, the other should be 0, if two are supplied width is default
-$width: 200;
 
-// Calculations
-@if $width > 0 {
-
-
-} @else {
-
-
-}
 
 body,html {
   background:#eee;
@@ -44,7 +33,14 @@ body,html {
 
 $width:280px;
 
+// Calculations
+@if $width > 0 {
 
+
+} @else {
+
+
+}
 $headWidth:$width*0.7142857142857143;
 $headHeight: $headWidth*0.9;
 $bodyWidth: $width*0.8571428571428571;
@@ -154,36 +150,36 @@ $mainPadding:-$handLeft;
       }
     }
     .mouth {
-      border-top: 15px solid #000;
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
+      border-top: $headWidth*0.075 solid #000;
+      border-left: $headWidth*0.035 solid transparent;
+      border-right: $headWidth*0.035 solid transparent;
       height: 0;
-      width: 20px;
+      width: $headWidth*0.1;
       position:absolute;
-      bottom:20px;
+      bottom:$headWidth*0.1;
       z-index:4;
-      right:calc(50% - 15px);
+      right:calc(50% - #{$headWidth*0.075});
       &:after {
         content:" ";
-        height:5px;
+        height:$headWidth*0.025;
         background:#FFF;
         width:120%;
         z-index:5;
         position:absolute;
         left:-10%;
-        top:-12px;
+        top:-$headWidth*0.06;
       }
       &:before {
         content:" ";
-        height:5px;
+        height:$headWidth*0.025;
         background:#FFF;
         width:30%;
         z-index:6;
         position:absolute;
         left:20%;
-        border-left:solid 2px #000;
-        border-right:solid 2px #000;
-        top:-12px;
+        border-left:solid $headWidth*0.01 #000;
+        border-right:solid $headWidth*0.01 #000;
+        top:-$headWidth*0.06;
       }
     }
     z-index:2;
