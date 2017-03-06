@@ -7,10 +7,11 @@ With this exercise I'm trying to accomplish three things:
 * Use the minimum possible and only CSS3 (I'll try not to use JS)
 * Stick to the most realistc version possible
 
+All the source codes is available here in GitHub, feel free to download it, improve it, complain about it.
 
-##Cartman
+##Cartman 
 
-My first draw and don't ask me why, is Cartman from South Park. I'm not happy with the code yet, so I'm going to continue improving it.
+My first project and don't ask me why, is Cartman from South Park. I'm not happy with the code yet, so I'm going to continue improving it.
 
 [JSFiddle Demo](https://jsfiddle.net/shadowlik/puvs9v3z/)
 
