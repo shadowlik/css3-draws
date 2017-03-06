@@ -42,17 +42,25 @@ body,html {
   }
 }
 
-$bodyWidth: 240px;
+$width:280px;
+
+
+$headWidth:$width*0.7142857142857143;
+$headHeight: $headWidth*0.9;
+$bodyWidth: $width*0.8571428571428571;
 $bodyHeight: $bodyWidth*0.4166666666666667;
 $handWidth: $bodyWidth*0.208333333333;
 $handHeight: $handWidth*0.6;
+$handLeft:-$handWidth*0.4;
+$mainPadding:-$handLeft;
 
 .cartman {
   position:relative;
   display:inline-block;
+  padding:0 $mainPadding;
   .head {
-    width:200px;
-    height:180px;
+    width:$headWidth;
+    height:$headHeight;
     -webkit-border-radius:50%;
     -moz-border-radius:50%;
     border-radius:50%;
@@ -61,32 +69,33 @@ $handHeight: $handWidth*0.6;
     display:inline-block;
     &:after {
       content: " ";
-      width: 100px;
-      height: 30px;
+      width: $headWidth/2;
+      height: ($headWidth/2)*0.3;
       border-bottom: solid 1px #333;
       -webkit-border-radius: 45%;
       -moz-border-radius: 45%;
       border-radius: 45%;
       position: absolute;
-      left: calc(50% - 50px);
-      bottom: 6px;
+      $headAfterLeft: ($headWidth/2)/2;
+      left: calc(50% - #{$headAfterLeft});
+      bottom: (($headWidth/2)*0.3)*0.2;
     }
     .hat {
       border-top:solid 50px $blueHat;
-      width:200px;
-      height:130px;
+      width:$headWidth;
+      height:$headWidth*0.65;
       -webkit-border-radius:50%;
       -moz-border-radius:50%;
       border-radius:50%;
       position:relative;
       &:after {
         content: " ";
-        width: 200px;
-        height: 70px;
+        width: $headWidth;
+        height: $headWidth*0.35;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
-        border-top: solid 10px #ffe11d;
+        border-top: solid $headWidth*0.05 #ffe11d;
         position: absolute;
         left: 0;
         top: 0;
@@ -96,12 +105,12 @@ $handHeight: $handWidth*0.6;
       }
       &:before {
         content:" ";
-        height:20px;
-        width:60px;
+        height:$headWidth*0.1;
+        width:$headWidth*0.3;
         background:$yellow;
         position:absolute;
-        top:-55px;
-        left:calc(50% - 30px);
+        top:-($headWidth*0.1)*2.75;
+        left:calc(50% - #{($headWidth*0.3) /2});
         -webkit-border-radius:50%;
         -moz-border-radius:50%;
         border-radius:50%;
@@ -112,21 +121,21 @@ $handHeight: $handWidth*0.6;
       top:36%;
       width:100%;
       >div {
-        width:50px;
-        height:60px;
+        width:$headWidth*0.225;
+        height:$headWidth*0.3;
         background:#FFF;
         z-index:4;
-        left:calc(50% - 102px);
+        left:calc(50% - #{$headWidth/2 + 2});
         border-radius:50%;
         transform: rotate(20deg);
         border-top:solid 3px #999;
         display:inline-block;
         &:after {
-          width:10px;
-          height:10px;
+          width:$headWidth*0.05;
+          height:$headWidth*0.05;
           background:#000;
           top:35%;
-          right:10px;
+          right:$headWidth*0.05;
           content:" ";
           -webkit-border-radius:50%;
           -moz-border-radius:50%;
@@ -135,11 +144,11 @@ $handHeight: $handWidth*0.6;
         }
         &:last-child {
           left:auto;
-          right:calc(50% - 102px);
+          right:calc(50% - #{$headWidth/2 + 2});
           transform: rotate(-20deg);
           &:after {
             right:auto;
-            left:10px;
+            left:$headWidth*0.05;
           }
         }
       }
@@ -188,25 +197,25 @@ $handHeight: $handWidth*0.6;
     border-bottom-left-radius: 5%;
     width:$bodyWidth;
     height: $bodyHeight;
-    margin-top:-50px;
+    margin-top:-$bodyHeight/2;
     position:relative;
     z-index:0;
     .buttons {
-      width:20px;
+      width:$bodyWidth*0.0833333333333333;
       border-right:solid 1px $shoes;
-      height:100px;
+      height:$bodyHeight;
       display:inline-block;
       >div {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 100px;
+        height: $bodyHeight;
         align-items: center;
         div {
           display:block;
           background:$shoes;
-          width:6px;
-          height:8px;
+          width:$bodyHeight*0.06;
+          height:$bodyHeight*0.08;
           border-radius:50%;
         }
       }
@@ -221,11 +230,11 @@ $handHeight: $handWidth*0.6;
       border-bottom-right-radius:15%;
       border-top-right-radius:50%;
       position:absolute;
-      left:-$handWidth*0.4;
+      left: $handLeft;
       top:40%;
       &.right {
         left:auto;
-        right:-20px;
+        right:$handLeft;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -236,20 +245,20 @@ $handHeight: $handWidth*0.6;
     }
   }
   .foot {
-    width:220px;
-    margin-left:10px;
+    width:$bodyWidth*0.9166666666666667;
+    margin-left:($bodyWidth - ($bodyWidth*0.9166666666666667))/2;
     background:$brown;
-    height:20px;
+    height:$bodyWidth*0.0909090909090909;
     border-bottom-left-radius:30%;
     border-bottom-right-radius:30%;
     position:relative;
     &:after {
       content:" ";
-      width:110px;
+      width:$bodyWidth/2;
       border-top-left-radius:50%;
       border-top-right-radius:50%;
       background:$shoes;
-      height:8px;
+      height:$bodyWidth*0.0363636363636364;
       position:absolute;
       bottom:0;
       z-index:3;
@@ -257,11 +266,11 @@ $handHeight: $handWidth*0.6;
     }
     &:before {
       content:" ";
-      width:110px;
+      width:$bodyWidth/2;
       border-top-left-radius:50%;
       border-top-right-radius:50%;
       background:$shoes;
-      height:8px;
+      height:$bodyWidth*0.0363636363636364;
       position:absolute;
       bottom:0;
       z-index:3;

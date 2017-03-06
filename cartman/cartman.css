@@ -18,7 +18,8 @@ body, html {
 
 .cartman {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  padding: 0 20px; }
   .cartman .head {
     width: 200px;
     height: 180px;
@@ -78,7 +79,7 @@ body, html {
       top: 36%;
       width: 100%; }
       .cartman .head .eyes > div {
-        width: 50px;
+        width: 45px;
         height: 60px;
         background: #FFF;
         z-index: 4;
@@ -188,28 +189,28 @@ body, html {
     width: 220px;
     margin-left: 10px;
     background: #79472e;
-    height: 20px;
+    height: 21.81818px;
     border-bottom-left-radius: 30%;
     border-bottom-right-radius: 30%;
     position: relative; }
     .cartman .foot:after {
       content: " ";
-      width: 110px;
+      width: 120px;
       border-top-left-radius: 50%;
       border-top-right-radius: 50%;
       background: #2c2c34;
-      height: 8px;
+      height: 8.72727px;
       position: absolute;
       bottom: 0;
       z-index: 3;
       right: 0; }
     .cartman .foot:before {
       content: " ";
-      width: 110px;
+      width: 120px;
       border-top-left-radius: 50%;
       border-top-right-radius: 50%;
       background: #2c2c34;
-      height: 8px;
+      height: 8.72727px;
       position: absolute;
       bottom: 0;
       z-index: 3;
