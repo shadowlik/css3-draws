@@ -18,10 +18,6 @@ $red: #EC3458;
 $width: 280px;
 $height: 0;
 
-//Base
-//width: 200px;
-//height: 180px;
-
 // Calculations
 @if $width > 0 {
   $height: $width*0.9142857142857143;
