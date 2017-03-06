@@ -4,7 +4,7 @@
 *** @license: GLP (https://opensource.org/licenses/GPL-3.0)
 **/
 body, html {
-  background: #eee;
+  background: #333;
   height: 100%; }
 
 .table-w {
@@ -17,6 +17,8 @@ body, html {
     vertical-align: middle; }
 
 .cartman {
+  width: 280px;
+  height: 256px;
   position: relative;
   display: inline-block;
   padding: 0 20px; }
@@ -28,22 +30,25 @@ body, html {
     border-radius: 50%;
     background: #feedc5;
     position: relative;
-    display: inline-block;
+    margin: auto;
     z-index: 2; }
     .cartman .head:after {
       content: " ";
-      width: 100px;
+      width: 50%;
       height: 30px;
       border-bottom: solid 1px #333;
       -webkit-border-radius: 45%;
       -moz-border-radius: 45%;
       border-radius: 45%;
       position: absolute;
-      left: calc(50% - 50px);
-      bottom: 6px; }
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: 6%; }
     .cartman .head .hat {
       border-top: solid 50px #00bac6;
-      width: 200px;
+      width: 100%;
       height: 130px;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -118,7 +123,7 @@ body, html {
       right: calc(50% - 15px); }
       .cartman .head .mouth:after {
         content: " ";
-        height: 5px;
+        height: 4px;
         background: #FFF;
         width: 120%;
         z-index: 5;
@@ -127,7 +132,7 @@ body, html {
         top: -12px; }
       .cartman .head .mouth:before {
         content: " ";
-        height: 5px;
+        height: 4px;
         background: #FFF;
         width: 30%;
         z-index: 6;
@@ -147,7 +152,9 @@ body, html {
     height: 100px;
     margin-top: -50px;
     position: relative;
-    z-index: 0; }
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto; }
     .cartman .body .buttons {
       width: 20px;
       border-right: solid 1px #2c2c34;
@@ -187,7 +194,7 @@ body, html {
         -ms-filter: "FlipH"; }
   .cartman .foot {
     width: 220px;
-    margin-left: 10px;
+    margin-left: 30px;
     background: #79472e;
     height: 21.81818px;
     border-bottom-left-radius: 30%;
