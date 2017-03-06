@@ -15,6 +15,205 @@ body, html {
   position: relative;
   display: inline-block; }
   .cartman .head {
+    width: 200px;
+    height: 180px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #feedc5;
+    position: relative;
+    display: inline-block;
+    z-index: 2; }
+    .cartman .head:after {
+      content: " ";
+      width: 100px;
+      height: 30px;
+      border-bottom: solid 1px #333;
+      -webkit-border-radius: 45%;
+      -moz-border-radius: 45%;
+      border-radius: 45%;
+      position: absolute;
+      left: calc(50% - 50px);
+      bottom: 6px; }
+    .cartman .head .hat {
+      border-top: solid 50px #00bac6;
+      width: 200px;
+      height: 130px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      position: relative; }
+      .cartman .head .hat:after {
+        content: " ";
+        width: 200px;
+        height: 70px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border-top: solid 10px #ffe11d;
+        position: absolute;
+        left: 0;
+        top: 0;
+        -webkit-box-shadow: 0px -1px 0px 0px #333333;
+        -moz-box-shadow: 0px -1px 0px 0px #333333;
+        box-shadow: 0px -1px 0px 0px #333333; }
+      .cartman .head .hat:before {
+        content: " ";
+        height: 20px;
+        width: 60px;
+        background: #ffe11d;
+        position: absolute;
+        top: -55px;
+        left: calc(50% - 30px);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%; }
+    .cartman .head .eyes {
+      position: absolute;
+      top: 36%;
+      width: 100%; }
+      .cartman .head .eyes > div {
+        width: 50px;
+        height: 60px;
+        background: #FFF;
+        z-index: 4;
+        left: calc(50% - 102px);
+        border-radius: 50%;
+        transform: rotate(20deg);
+        border-top: solid 3px #999;
+        display: inline-block; }
+        .cartman .head .eyes > div:after {
+          width: 10px;
+          height: 10px;
+          background: #000;
+          top: 35%;
+          right: 10px;
+          content: " ";
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          position: absolute; }
+        .cartman .head .eyes > div:last-child {
+          left: auto;
+          right: calc(50% - 102px);
+          transform: rotate(-20deg); }
+          .cartman .head .eyes > div:last-child:after {
+            right: auto;
+            left: 10px; }
+    .cartman .head .mouth {
+      border-top: 15px solid #000;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      height: 0;
+      width: 20px;
+      position: absolute;
+      bottom: 20px;
+      z-index: 4;
+      right: calc(50% - 15px); }
+      .cartman .head .mouth:after {
+        content: " ";
+        height: 5px;
+        background: #FFF;
+        width: 120%;
+        z-index: 5;
+        position: absolute;
+        left: -10%;
+        top: -12px; }
+      .cartman .head .mouth:before {
+        content: " ";
+        height: 5px;
+        background: #FFF;
+        width: 30%;
+        z-index: 6;
+        position: absolute;
+        left: 20%;
+        border-left: solid 2px #000;
+        border-right: solid 2px #000;
+        top: -12px; }
+  .cartman .body {
+    text-align: center;
+    background: #EC3458;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    width: 240px;
+    height: 100px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 0; }
+    .cartman .body .buttons {
+      width: 20px;
+      border-right: solid 1px #2c2c34;
+      height: 100px;
+      display: inline-block; }
+      .cartman .body .buttons > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100px;
+        align-items: center; }
+        .cartman .body .buttons > div div {
+          display: block;
+          background: #2c2c34;
+          width: 6px;
+          height: 8px;
+          border-radius: 50%; }
+    .cartman .body .hand {
+      background: #ffe11d;
+      width: 50px;
+      height: 30px;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 15%;
+      border-top-right-radius: 50%;
+      position: absolute;
+      left: -20px;
+      top: 40%; }
+      .cartman .body .hand.right {
+        left: auto;
+        right: -20px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH"; }
+  .cartman .foot {
+    width: 220px;
+    margin-left: 10px;
+    background: #79472e;
+    height: 20px;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    position: relative; }
+    .cartman .foot:after {
+      content: " ";
+      width: 110px;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      background: #2c2c34;
+      height: 8px;
+      position: absolute;
+      bottom: 0;
+      z-index: 3;
+      right: 0; }
+    .cartman .foot:before {
+      content: " ";
+      width: 110px;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      background: #2c2c34;
+      height: 8px;
+      position: absolute;
+      bottom: 0;
+      z-index: 3;
+      left: 0; }
+
+.cartmanold {
+  position: relative;
+  display: inline-block; }
+  .cartmanold .head {
     overflow: hidden;
     background-color: #feedc5;
     -webkit-border-radius: 50%;
@@ -24,7 +223,7 @@ body, html {
     height: 260px;
     position: relative;
     border-top: solid 100px #00bac6; }
-    .cartman .head:after {
+    .cartmanold .head:after {
       content: " ";
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -37,7 +236,7 @@ body, html {
       width: calc(100% + 20px);
       height: 200px;
       z-index: 3; }
-    .cartman .head .eye {
+    .cartmanold .head .eye {
       width: 100px;
       height: 120px;
       background: #FFF;
@@ -48,7 +247,7 @@ body, html {
       border-radius: 50%;
       transform: rotate(20deg);
       border-top: solid 3px #999; }
-      .cartman .head .eye:after {
+      .cartmanold .head .eye:after {
         position: absolute;
         width: 10px;
         height: 10px;
@@ -59,14 +258,14 @@ body, html {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%; }
-      .cartman .head .eye.right {
+      .cartmanold .head .eye.right {
         left: auto;
         right: calc(50% - 102px);
         transform: rotate(-20deg); }
-        .cartman .head .eye.right:after {
+        .cartmanold .head .eye.right:after {
           right: auto;
           left: 30px; }
-    .cartman .head .mouth {
+    .cartmanold .head .mouth {
       border-top: 30px solid #000;
       border-left: 15px solid transparent;
       border-right: 15px solid transparent;
@@ -76,7 +275,7 @@ body, html {
       bottom: 30px;
       z-index: 4;
       right: calc(50% - 30px); }
-      .cartman .head .mouth:after {
+      .cartmanold .head .mouth:after {
         content: " ";
         height: 5px;
         background: #FFF;
@@ -85,7 +284,7 @@ body, html {
         position: absolute;
         left: -10%;
         top: -25px; }
-      .cartman .head .mouth:before {
+      .cartmanold .head .mouth:before {
         content: " ";
         height: 5px;
         background: #FFF;
@@ -97,4 +296,4 @@ body, html {
         border-right: solid 4px #000;
         top: -25px; }
 
-/*# sourceMappingURL=cartman.css.map */
+/*# sourceMappingURL=cartman.css.map*/
