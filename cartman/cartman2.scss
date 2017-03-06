@@ -178,6 +178,38 @@ body,html {
       }
     }
   }
+  .foot {
+    width:220px;
+    margin-left:10px;
+    background:$brown;
+    height:20px;
+    border-bottom-left-radius:30%;
+    border-bottom-right-radius:30%;
+    position:relative;
+    &:after {
+      content:" ";
+      width:110px;
+      border-top-left-radius:50%;
+      border-top-right-radius:50%;
+      background:$shoes;
+      height:8px;
+      position:absolute;
+      bottom:0;
+      z-index:3;
+    }
+    &:before {
+      content:" ";
+      width:110px;
+      border-top-left-radius:50%;
+      border-top-right-radius:50%;
+      background:$shoes;
+      height:8px;
+      position:absolute;
+      bottom:0;
+      z-index:3;
+      left:0;
+    }
+  }
 }
 
 .cartmanold {
