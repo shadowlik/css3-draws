@@ -6,7 +6,7 @@
 
 // Colors */
 $bodyColor: #feedc5;
-$blueHat: #00bac6;
+$blue: #00bac6;
 $yellow: #ffe11d;
 $brown: #79472e;
 $shoes: #2c2c34;
@@ -84,7 +84,7 @@ body,html {
       bottom:6%;
     }
     .hat {
-      border-top:solid (0.2777777777777778*$headHeight) $blueHat;
+      border-top:solid (0.2777777777777778*$headHeight) $blue;
       width:100%;
       height:$headHeight * 0.7222222222222222;
       -webkit-border-radius:50%;
