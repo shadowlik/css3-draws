@@ -7,7 +7,7 @@ With this exercise I'm trying to accomplish three things:
 * Use the minimum possible and only CSS3 (I'll try not to use JS)
 * Stick to the most realistc version possible
 
-All the source codes are available here in GitHub, feel free to download it, improve it, complain about it.
+All the source codes are available here in GitHub, I'm not using Compass or Mixins to make it as simples as possible (I've been told that this confuse new developers), feel free to download it, improve it, complain about it.
 
 ##Cartman 
 
