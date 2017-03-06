@@ -1,3 +1,10 @@
+/** @author: Henrique Marques Fernandes
+*** @authorEmail: henrique@marquesfernandes.com
+*** @date: 01/03/2017
+*** @license: GLP (https://opensource.org/licenses/GPL-3.0)
+**/
+
+/* Colors */
 $bodyColor: #feedc5;
 $blueHat: #00bac6;
 $yellow: #ffe11d;
@@ -5,6 +12,8 @@ $brown: #79472e;
 $shoes: #2c2c34;
 $red: #EC3458;
 
+/* Sizes */
+//TODO improve the sizes variables - make all sizes proportional
 $headSize: 200px;
 
 body,html {
