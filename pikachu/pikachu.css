@@ -1,0 +1,27 @@
+/** @author: Henrique Marques Fernandes
+*** @authorEmail: henrique@marquesfernandes.com
+*** @date: 06/03/2017
+*** @license: GLP (https://opensource.org/licenses/GPL-3.0)
+**/
+body, html {
+  background: #eee;
+  height: 100%; }
+
+.table-w {
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center; }
+  .table-w .table-c {
+    display: table-cell;
+    vertical-align: middle; }
+
+.pikachu {
+  display: inline-block; }
+  .pikachu .head {
+    background: #FFD620;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%; }
+
+/*# sourceMappingURL=pikachu.css.map */

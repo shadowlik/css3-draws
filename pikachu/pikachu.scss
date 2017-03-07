@@ -4,6 +4,13 @@
 *** @license: GLP (https://opensource.org/licenses/GPL-3.0)
 **/
 
+
+//Colors
+$yellow: #FFD620;
+$shadow: #E0A030;
+$red: #FD310D;
+$tail: #815034;
+
 body,html {
   background:#eee;
   height:100%;
@@ -17,5 +24,15 @@ body,html {
   .table-c {
     display:table-cell;
     vertical-align:middle;
+  }
+}
+
+.pikachu {
+  display:inline-block;
+  .head {
+    background:$yellow;
+    border-top-right-radius:50%;
+    border-top-left-radius:50%;
+    border-bottom-left-radius:50%;
   }
 }
