@@ -18,7 +18,8 @@ body, html {
 
 .pikachu {
   display: inline-block;
-  position: relative; }
+  position: relative;
+  padding: 100px; }
   .pikachu .head-wrapper {
     height: 180px;
     width: 180px;
@@ -93,5 +94,33 @@ body, html {
         height: 5px;
         background: #000;
         border-radius: 8px; }
+    .pikachu .head-wrapper .ear {
+      width: 100px;
+      height: 110px;
+      border-radius: 5px 125% 0px 125%;
+      background: #FFD620;
+      position: absolute;
+      bottom: 80%;
+      left: -50px;
+      transform: rotate(-5deg);
+      border: solid 1px #000;
+      overflow: hidden; }
+      .pikachu .head-wrapper .ear:after {
+        content: " ";
+        background: none repeat scroll 0% 0% #000;
+        width: 40px;
+        height: 80px;
+        position: absolute;
+        transform: rotate(12deg);
+        top: -3px;
+        left: -17px; }
+      .pikachu .head-wrapper .ear.right {
+        right: -50px;
+        left: auto;
+        transform: rotate(95deg); }
+        .pikachu .head-wrapper .ear.right:after {
+          transform: rotate(12deg);
+          right: -16px;
+          left: auto; }
 
 /*# sourceMappingURL=pikachu.css.map */

@@ -30,6 +30,7 @@ body,html {
 .pikachu {
   display:inline-block;
   position:relative;
+  padding:100px;
   .head-wrapper {
     height:180px;
     width:180px;
@@ -112,6 +113,38 @@ body,html {
         height:5px;
         background:#000;
         border-radius:8px;
+      }
+    }
+    .ear {
+      width: 100px;
+      height: 110px;
+      border-radius: 5px 125% 0px 125%;
+      background:$yellow;
+      position:absolute;
+      bottom:80%;
+      left:-50px;
+      transform:rotate(-5deg);
+      border:solid 1px #000;
+      overflow:hidden;
+      &:after {
+        content: " ";
+        background: none repeat scroll 0% 0% #000;
+        width: 40px;
+        height: 80px;
+        position: absolute;
+        transform: rotate(12deg);
+        top: -3px;
+        left: -17px;
+      }
+      &.right {
+        right:-50px;
+        left:auto;
+        transform:rotate(95deg);
+        &:after {
+          transform:rotate(12deg);
+          right:-16px;
+          left:auto;
+        }
       }
     }
   }
