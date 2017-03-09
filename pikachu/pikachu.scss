@@ -141,9 +141,31 @@ body,html {
         left:auto;
         transform:rotate(95deg);
         &:after {
-          transform:rotate(12deg);
-          right:-16px;
-          left:auto;
+          transform: rotate(78deg);
+          right: 60px;
+          left: auto;
+          top: -30px;
+        }
+      }
+    }
+    .cheeks {
+      position:absolute;
+      z-index:999;
+      bottom:45px;
+      width:100%;
+      left:0;
+      .cheek {
+        width: 30px;
+        height: 30px;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+        background:$red;
+        float:left;
+        margin:0 9px;
+        border:solid 1px #000;
+        &.right {
+          float:right;
         }
       }
     }
