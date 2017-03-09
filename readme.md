@@ -27,4 +27,4 @@ Now I'm trying Pikachu, still a work in progress...
 
 [JSFiddle Demo](https://jsfiddle.net/shadowlik/p1b3vqgf/)
 
-![Pikachu Demo](http://i.imgur.com/54LPXAe.png)
+![Pikachu Demo](http://i.imgur.com/54LPXAe.png?1)
