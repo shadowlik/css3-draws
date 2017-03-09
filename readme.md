@@ -21,4 +21,10 @@ continue improving it.
 
 ![Cartman Demo](https://box.everhelper.me/attachment/799184/9e6b6aea-f240-4982-bf0b-d81aec4db99d/521472-lgGbKnOuDfyq20qr/screen.jpeg)
 
-## 
+## Pikachu
+
+Now I'm trying Pikachu, still a work in progress...
+
+[JSFiddle Demo](https://jsfiddle.net/shadowlik/p1b3vqgf/)
+
+![Pikachu Demo](http://i.imgur.com/undefined.png)
