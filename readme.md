@@ -1,4 +1,4 @@
-#CSS3 Draws
+# CSS3 Draws
 
 Hi, my name is Henrique and I'm addicted to [medium.com](http://medium.com). One day while I was scrolling trough the 
 frontend section I read a great article how she improved her frontend skills by drawing in CSS [How I started drawing CSS Images by Sash](https://blog.prototypr.io/how-i-started-drawing-css-images-3fd878675c89#.chbo6ng09)
@@ -11,7 +11,7 @@ With this exercise I'm trying to accomplish three things:
 All the source codes are available here in GitHub, I'm not using Compass or Mixins to make it as simple as possible 
 (I've been told that this confuse new developers), feel free to download it, improve it, complain about it.
 
-##Cartman 
+## Cartman 
 
 My first project and don't ask me why, is Cartman from South Park. I'm not happy with the code yet, so I'm going to 
 continue improving it.
